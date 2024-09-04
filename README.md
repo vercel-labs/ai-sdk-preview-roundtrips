@@ -1,4 +1,4 @@
-# Automatically handle multiple tool call roundtrips using Vercel AI SDK
+# Automatic Tool Roundtrips
 
 This example demonstrates how to use the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) and the `streamText` function to automatically handle multiple tool call roundtrips.
 

@@ -8,9 +8,13 @@ export async function POST(request: Request) {
 
   const stream = await streamText({
     model: openai("gpt-4o"),
-    system: "you are a friendly assistant",
+    system: `\
+      - you are a friendly package tracking assistant
+      - your responses are concise
+      - you do not ever use lists, tables, or bullet points; instead, you provide a single response
+    `,
     messages,
-    maxToolRoundtrips: 5,
+    maxToolRoundtrips: 3,
     tools: {
       listOrders: {
         description: "list all orders",

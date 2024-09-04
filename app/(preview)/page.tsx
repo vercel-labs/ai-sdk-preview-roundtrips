@@ -22,9 +22,9 @@ export default function Home() {
       action: "where is my watch?",
     },
     {
-      title: "Show me",
-      label: "my past orders",
-      action: "show me my past orders",
+      title: "What orders",
+      label: "have shipped?",
+      action: "what orders have shipped?",
     },
   ];
 

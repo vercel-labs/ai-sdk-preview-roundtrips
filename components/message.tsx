@@ -55,14 +55,16 @@ export const Message = ({
       </div>
 
       <div className="flex flex-col gap-6 w-full">
-        <div className="text-zinc-800 dark:text-zinc-300 flex flex-col gap-4">
-          <Markdown>{content as string}</Markdown>
-        </div>
+        {content && (
+          <div className="text-zinc-800 dark:text-zinc-300 flex flex-col gap-4">
+            <Markdown>{content as string}</Markdown>
+          </div>
+        )}
 
         {toolInvocations && (
-          <div>
+          <div className="flex flex-col gap-4">
             {toolInvocations.map((toolInvocation) => {
-              const { toolName, toolCallId, args, state } = toolInvocation;
+              const { toolName, toolCallId, state } = toolInvocation;
 
               if (state === "result") {
                 const { result } = toolInvocation;

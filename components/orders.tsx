@@ -28,7 +28,7 @@ export const Orders = ({ orders }: { orders: any[] }) => {
 
           <div className="flex flex-row justify-between w-full">
             <div className="flex flex-col gap-1">
-              <div className="text-sm capitalize">{order.name}</div>
+              <div className="text-sm">{order.name}</div>
               <div className="text-sm text-zinc-500">
                 Ordered {format(new Date(order.orderedAt), "dd LLL, yyyy")}
               </div>

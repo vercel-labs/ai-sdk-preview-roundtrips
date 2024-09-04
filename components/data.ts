@@ -7,6 +7,12 @@ export interface Order {
 
 export const ORDERS: Order[] = [
   {
+    id: "412093",
+    name: "Apple Watch Ultra 2",
+    orderedAt: "2024-08-26",
+    image: "watch.png",
+  },
+  {
     id: "539182",
     name: "Apple TV",
     orderedAt: "2024-08-25",
@@ -17,12 +23,6 @@ export const ORDERS: Order[] = [
     name: "Apple iPhone 14 Pro",
     orderedAt: "2024-08-24",
     image: "iphone.png",
-  },
-  {
-    id: "281958",
-    name: "Apple Watch Ultra 2",
-    orderedAt: "2024-08-26",
-    image: "watch.png",
   },
 ];
 
@@ -36,7 +36,7 @@ export const TRACKING_INFORMATION = [
   {
     orderId: "412093",
     progress: "Shipped",
-    description: "Last Updated Today 4:30 PM",
+    description: "Last Updated Today 4:31 PM",
   },
   {
     orderId: "281958",
@@ -46,7 +46,7 @@ export const TRACKING_INFORMATION = [
   {
     orderId: "539182",
     progress: "Delivered",
-    description: "Delivered Today 3:00 PM",
+    description: "Front Porch Today 3:16 PM",
   },
 ];
 
