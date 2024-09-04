@@ -38,7 +38,7 @@ export const Tracker = ({
         animate={{ opacity: 1 }}
         transition={{ delay: 0.0 }}
       >
-        <div className="flex flex-row gap-2 items-center text-sm text-zinc-500">
+        <div className="flex flex-row gap-2 items-center text-sm text-zinc-500 dark:text-zinc-400">
           <div>Tracking Order</div>
           <InvoiceIcon size={14} />
           <div>{trackingInformation.orderId}</div>
@@ -68,7 +68,7 @@ export const Tracker = ({
         >
           <BoxIcon size={14} />
         </motion.div>
-        <div className="h-2 bg-zinc-100 w-full rounded-lg relative">
+        <div className="h-2 bg-zinc-100 w-full rounded-lg relative dark:bg-zinc-700">
           <motion.div
             className="h-2 rounded-lg z-10 absolute"
             initial={{ width: 0, background: "#f4f4f5" }}
@@ -116,7 +116,7 @@ export const Tracker = ({
           </span>
         </motion.div>
 
-        <div className="h-2 bg-zinc-100 w-full rounded-lg relative">
+        <div className="h-2 bg-zinc-100 w-full rounded-lg relative dark:bg-zinc-700">
           <motion.div
             className="h-2 rounded-lg z-10 absolute"
             initial={{ width: 0, background: "#f4f4f5" }}
@@ -136,7 +136,7 @@ export const Tracker = ({
           />
         </div>
         <motion.div
-          className="size-8 bg-zinc-100 text-zinc-500 rounded-full flex-shrink-0 flex flex-row justify-center items-center"
+          className="size-8 bg-zinc-100 text-zinc-500 dark:text-zinc-400 rounded-full flex-shrink-0 flex flex-row justify-center items-center"
           initial={{
             background: "#f4f4f5",
             color: "#71717a",
@@ -169,7 +169,7 @@ export const Tracker = ({
         transition={{ delay: 0.6 }}
       >
         <div className="text-sm">{progress}</div>
-        <div className="text-sm text-zinc-500">
+        <div className="text-sm text-zinc-500 dark:text-zinc-400">
           {trackingInformation.description}
         </div>
       </motion.div>

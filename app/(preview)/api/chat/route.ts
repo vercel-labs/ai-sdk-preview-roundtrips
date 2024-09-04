@@ -31,6 +31,7 @@ export async function POST(request: Request) {
         }),
         execute: async function ({ orderId }) {
           const trackingInformation = getTrackingInformation({ orderId });
+          await new Promise((resolve) => setTimeout(resolve, 500));
           return trackingInformation;
         },
       },
