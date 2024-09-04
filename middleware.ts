@@ -27,5 +27,5 @@ export async function middleware(req: NextRequest, ev: NextFetchEvent) {
 }
 
 export const config = {
-  matcher: ["/"],
+  matcher: ["/api/chat"],
 };

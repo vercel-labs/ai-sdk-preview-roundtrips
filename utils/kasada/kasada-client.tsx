@@ -14,7 +14,7 @@ export function KasadaClient() {
               window.KPSDK.configure([
                 {
                   domain: location.host,
-                  path: "/",
+                  path: "/api/chat",
                   method: "POST",
                 },
               ]);
