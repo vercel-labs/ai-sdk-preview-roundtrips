@@ -29,7 +29,7 @@ export const Orders = ({ orders }: { orders: any[] }) => {
           <div className="flex flex-row justify-between w-full">
             <div className="flex flex-col gap-1">
               <div className="text-sm">{order.name}</div>
-              <div className="text-sm text-zinc-500">
+              <div className="text-sm text-zinc-500 dark:text-zinc-400">
                 Ordered {format(new Date(order.orderedAt), "dd LLL, yyyy")}
               </div>
             </div>
@@ -39,7 +39,9 @@ export const Orders = ({ orders }: { orders: any[] }) => {
                 <div className="text-zinc-400">
                   <InvoiceIcon size={14} />
                 </div>
-                <div className="text-sm text-zinc-500">{order.id}</div>
+                <div className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {order.id}
+                </div>
               </div>
             </div>
           </div>
