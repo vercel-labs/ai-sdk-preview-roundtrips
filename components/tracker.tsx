@@ -141,21 +141,20 @@ export const Tracker = ({
             background: "#f4f4f5",
             color: "#71717a",
           }}
+          transition={{ delay: 0.5 }}
           animate={{
-            background:
-              progress === "Shipped"
-                ? "#f4f4f5"
-                : getColorFromProgress({
-                    progress,
-                    type: "foreground",
-                  }),
-            color:
-              progress === "Shipped"
-                ? "#71717a"
-                : getColorFromProgress({
-                    progress,
-                    type: "text",
-                  }),
+            background: ["Out for Delivery", "Shipped"].includes(progress)
+              ? "#f4f4f5"
+              : getColorFromProgress({
+                  progress,
+                  type: "foreground",
+                }),
+            color: ["Out for Delivery", "Shipped"].includes(progress)
+              ? "#71717a"
+              : getColorFromProgress({
+                  progress,
+                  type: "text",
+                }),
           }}
         >
           <HomeIcon size={14} />
