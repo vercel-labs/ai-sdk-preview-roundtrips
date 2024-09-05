@@ -1,6 +1,6 @@
 import { getOrders, getTrackingInformation, ORDERS } from "@/components/data";
 import { openai } from "@ai-sdk/openai";
-import { streamText } from "ai";
+import { convertToCoreMessages, streamText } from "ai";
 import { z } from "zod";
 
 export async function POST(request: Request) {
@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       - your responses are concise
       - you do not ever use lists, tables, or bullet points; instead, you provide a single response
     `,
-    messages,
+    messages: convertToCoreMessages(messages),
     maxToolRoundtrips: 3,
     tools: {
       listOrders: {
