@@ -49,19 +49,19 @@ export default function Home() {
                   <MasonryIcon />
                 </p>
                 <p>
-                  The maxAutomaticRoundtrips parameter of streamText function
-                  allows you to automatically handle multiple tool call
-                  roundtrips using Vercel AI SDK in your application.
+                  The maxSteps parameter of streamText function allows you to
+                  automatically handle multiple tool calls in sequence using the
+                  AI SDK in your application.
                 </p>
                 <p>
                   {" "}
                   Learn more about{" "}
                   <Link
                     className="text-blue-500 dark:text-blue-400"
-                    href="https://sdk.vercel.ai/docs/ai-sdk-core/tools-and-tool-calling#tool-roundtrips"
+                    href="https://sdk.vercel.ai/docs/ai-sdk-core/tools-and-tool-calling#multi-step-calls"
                     target="_blank"
                   >
-                    Tool Roundtrips{" "}
+                    Multiple Tool Steps{" "}
                   </Link>
                   from the Vercel AI SDK.
                 </p>
